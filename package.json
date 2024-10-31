@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "name": "responsive-containers",
+  "version": "1.1.0",
+  "description": "A WordPress plugin for styling responsive containers with ResizeObserver",
+  "author": "K Adam White",
+  "homepage": "https://github.com/kadamwhite/responsive-containers#readme",
+  "license": "GPL-2.0-or-later",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "webpack --config=webpack.config.js",
+    "generate-temporary-readme": "node .scripts/generate-readme",
+    "lint": "eslint .",
+    "release": "bash .scripts/release",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kadamwhite/responsive-containers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kadamwhite/responsive-containers/issues"
+  },
+  "keywords": [
+    "wordpress",
+    "wordpress-plugin",
+    "responsive-containers",
+    "resizeobserver"
+  ],
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 10"
+  ],
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "devDependencies": {
+    "@humanmade/webpack-helpers": "^0.5.0",
+    "@wordpress/eslint-plugin": "^2.3.0",
+    "core-js": "^3.1.4",
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "jsdom-mount": "^0.1.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  }
+}
